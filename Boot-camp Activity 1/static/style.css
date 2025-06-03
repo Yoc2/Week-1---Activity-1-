@@ -1,0 +1,301 @@
+/* ─── Base Styles ─────────────────────────────────────────────────────────────── */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Flash message variants */
+.flash-messages {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.flash-message {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.flash-message.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.flash-message.danger {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.flash-message.warning {
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+}
+
+/* Button styling */
+.btn {
+  padding: 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* Link styling */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+/* Input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccd1d9;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* ─── Login Styles ───────────────────────────────────────────────────────────── */
+.login-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.login-box {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 24px;
+  color: #2c3e50;
+}
+
+/* ─── General Form Styles (e.g., Registration) ───────────────────────────────── */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-box h2 {
+  margin-bottom: 24px;
+  color: #2c3e50;
+}
+
+.bottom-link {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.bottom-link a {
+  color: #3498db;
+}
+
+.bottom-link a:hover {
+  text-decoration: underline;
+}
+
+/* ─── Right‐align the Register (submit) button ───────────────────────────────── */
+.form-actions {
+  text-align: right;
+  margin-top: 24px; /* optional: space above the button */
+}
+
+/* ─── Dashboard Styles ───────────────────────────────────────────────────────── */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+}
+
+.dashboard-box {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile picture (top-right) */
+.profile-picture {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #3498db;
+}
+
+.no-picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-weight: bold;
+  border: 2px dashed #ccd1d9;
+}
+
+.profile-section {
+  margin-top: 40px; /* push content down to avoid overlap */
+  text-align: left;
+}
+
+.profile-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-info li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #333;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-right: 6px;
+}
+
+.logout-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.logout-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* ─── Responsive Adjustments ─────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  /* Login adjustments */
+  .login-box {
+    bottom: 10px;
+    right: 10px;
+    padding: 20px;
+    max-width: 90%;
+  }
+  .form-actions {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .register-link {
+    margin-bottom: 10px;
+  }
+
+  /* General form adjustments */
+  .form-box {
+    padding: 20px;
+    max-width: 90%;
+  }
+  .btn {
+    font-size: 15px;
+  }
+
+  /* Dashboard adjustments */
+  .dashboard-box {
+    padding: 20px;
+    max-width: 90%;
+  }
+  .profile-picture {
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+  }
+  .profile-section {
+    margin-top: 80px; /* ensure enough space for smaller picture */
+  }
+  .profile-info li {
+    font-size: 14px;
+  }
+  .logout-btn {
+    width: 100%;
+  }
+}

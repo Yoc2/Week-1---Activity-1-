@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="dashboard-box">
+
+      <div class="profile-picture">
+        {% if profile.profile %}
+          <img
+            src="{{ url_for('static', filename='profile_pics/' ~ profile.profile) }}"
+            alt="Profile Picture of {{ profile.name }}"
+          >
+        {% else %}
+          <div class="no-picture">N/A</div>
+        {% endif %}
+      </div>
+
+      <!-- User details -->
+      <div class="profile-section">
+        <ul class="profile-info">
+          <li><span class="info-label">Name:</span> {{ profile.name }}</li>
+          <li><span class="info-label">Age:</span> {{ profile.age }}</li>
+          <li><span class="info-label">Address:</span> {{ profile.address }}</li>
+        </ul>
+      </div>
+
+      <!-- Logout button -->
+      <div class="logout-section">
+        <a class="btn logout-btn" href="{{ url_for('logout') }}">Log Out</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
